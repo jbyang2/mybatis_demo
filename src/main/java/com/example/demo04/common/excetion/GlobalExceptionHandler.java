@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @ControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
-    //运行时异常拦截
     @ExceptionHandler(RuntimeException.class)
     @ResponseBody
     public Object exceptionHandle(Exception e){
